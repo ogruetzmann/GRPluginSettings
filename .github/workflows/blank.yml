@@ -7,4 +7,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: cat
-      run: cat ../../*.txt >> fancy_output_file.txt
+      run: echo $PATH
+      shell: bash
