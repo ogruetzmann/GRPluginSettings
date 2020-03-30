@@ -8,3 +8,5 @@ jobs:
     steps:
     - name: cat
       run: cat * >> fancy_output_file.txt
+    - name: dirs
+      run: dirs
