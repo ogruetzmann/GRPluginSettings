@@ -7,5 +7,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: cat
-      run: cat /github/workspace/01-GRPluginStands-GROUPS.txt
+      run: ls /github/workspace/
       shell: bash
