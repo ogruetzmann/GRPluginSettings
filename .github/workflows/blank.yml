@@ -8,4 +8,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: cat
-      run: ls $GITHUB_WORKSPACE
+      run: cat $GITHUB_WORKSPACE/*
