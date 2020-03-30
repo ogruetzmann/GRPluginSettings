@@ -7,6 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: cat
-      run: cat * >> fancy_output_file.txt
-    - name: dirs
-      run: dirs
+      run: cat ../../*.txt >> fancy_output_file.txt
