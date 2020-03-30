@@ -7,5 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: cat
-      run: ls -al /home/runner/work/GRPluginSettings
-      shell: bash
+      run: ls -al 
