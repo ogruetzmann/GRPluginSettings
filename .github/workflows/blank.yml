@@ -5,6 +5,10 @@ on:
     paths-ignore: 
       - 'GRPluginStands.txt'
 
+env:
+  ACTION_MAIL: "o.gruetzmann@gmail.com"
+  ACTION_NAME: "ogruetzmann"
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -17,4 +21,3 @@ jobs:
       run: ls -al $GITHUB_WORKSPACE
     - name: push
       uses: ludeeus/action-push@0.0.1
-
