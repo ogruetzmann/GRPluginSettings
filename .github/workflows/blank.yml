@@ -9,5 +9,5 @@ jobs:
     - uses: actions/checkout@v2
     - name: cat
       working-directory: $GITHUB_WORKSPACE
-      run: cat * >> GRPluginStands.txt
+      run: cat ./* >> GRPluginStands.txt
     - uses: aTable/deploy-to-dropbox@v1.0.7
