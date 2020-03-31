@@ -16,7 +16,7 @@ jobs:
     - name: checkout
       uses: actions/checkout@v2
     - name: cat
-      run: cat $GITHUB_WORKSPACE/* >> GRPluginStands.txt
+      run: cat $GITHUB_WORKSPACE/* >> ./Release/GRPluginStands.txt
     - name: ls
       run: ls -al $GITHUB_WORKSPACE
     - name: push
