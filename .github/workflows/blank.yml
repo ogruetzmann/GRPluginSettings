@@ -6,8 +6,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - name: checkout
+      uses: actions/checkout@v2
     - name: cat
-      working-directory: $GITHUB_WORKSPACE/
-      run: cat ./* >> GRPluginStands.txt
-    - uses: aTable/deploy-to-dropbox@v1.0.7
+      working-directory: $GITHUB_WORKSPACE
+      run: cat $GITHUB_WORKSPACE/* >> GRPluginStands.txt
+    - name: ls
+      working-directory: $GITHUB_WORKSPACE
+      run: ls -al
+    - name:  deploy
+      uses: aTable/deploy-to-dropbox@v1.0.7
