@@ -11,7 +11,6 @@ jobs:
     - name: cat
       run: cat $GITHUB_WORKSPACE/* >> GRPluginStands.txt
     - name: ls
-      working-directory: $GITHUB_WORKSPACE
-      run: ls -al
+      run: ls -al $GITHUB_WORKSPACE
     - name:  deploy
       uses: aTable/deploy-to-dropbox@v1.0.7
