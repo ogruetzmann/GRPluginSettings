@@ -9,8 +9,7 @@ jobs:
     - name: checkout
       uses: actions/checkout@v2
     - name: cat
-      working-directory: $GITHUB_WORKSPACE
-      run: cat '*' >> GRPluginStands.txt
+      run: cat $GITHUB_WORKSPACE/* >> GRPluginStands.txt
     - name: ls
       working-directory: $GITHUB_WORKSPACE
       run: ls -al
