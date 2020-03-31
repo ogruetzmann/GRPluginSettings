@@ -6,7 +6,6 @@ GROUP:ETRANS:BCS
 // Aircraft specific
 GROUP:FA320:A318:A319:A320:A321:A19N:A20N:A21N
 //-------------------------EDDM-----------------------------------
-
 STAND:EDDM:110:N048.21.13.579:E011.46.59.238:25
 NOTCALLSIGN:GROUP_SALL
 PRIORITY:3
