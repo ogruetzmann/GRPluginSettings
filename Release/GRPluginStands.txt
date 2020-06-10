@@ -7,6 +7,7 @@ GROUP:EDDB_C:TUI:BER:AAL:BAW:FIN:IBE:CPA:JAL:LAN:TAM:MAS:RAM:QFA:QTR:RJA:ALK:SBI
 
 // Aircraft specific
 GROUP:FA320:A318:A319:A320:A321:A19N:A20N:A21N
+
 //-------------------------EDDB-----------------------------------
 STAND:EDDB:A01:N052.22.01.071:E013.30.13.541:25
 USE:A
@@ -831,7 +832,9 @@ NOTWTC:HJ
 STAND:EDDB:64:N052.23.24.550:E013.31.18.034:25
 USE:A
 CALLSIGN:GROUP_EDDB_A
-NOTWTC:HJ//-------------------------EDDC-----------------------------------
+NOTWTC:HJ
+
+//-------------------------EDDC-----------------------------------
 STAND:EDDC:30:N051.07.35.913:E013.45.53.421:20
 USE:A
 
