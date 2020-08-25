@@ -18,6 +18,6 @@ jobs:
     - name: cat
       run: cat $GITHUB_WORKSPACE/*.txt >> GRpluginStands.txt
     - name: mv
-      run: mv GRPluginStands.txt ./Release/
+      run: mv GRpluginStands.txt ./Release/
     - name: push
       uses: ludeeus/action-push@0.0.1
