@@ -8,6 +8,7 @@ on:
 env:
   ACTION_MAIL: "o.gruetzmann@gmail.com"
   ACTION_NAME: "ogruetzmann"
+  ACTION_FILENAME: "GRpluginStands.txt"
 
 jobs:
   build:
@@ -16,8 +17,8 @@ jobs:
     - name: checkout
       uses: actions/checkout@v2
     - name: cat
-      run: cat $GITHUB_WORKSPACE/*.txt >> GRpluginStands.txt
+      run: cat $GITHUB_WORKSPACE/*.txt >> $ACTION_FILENAME
     - name: mv
-      run: mv GRpluginStands.txt ./Release/
+      run: mv $ACTION_FILENAME ./Release/
     - name: push
       uses: ludeeus/action-push@0.0.1
