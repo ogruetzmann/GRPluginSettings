@@ -1,0 +1,11 @@
+//---------------------------C O L O R---------------------------
+COLORDEF:blue:0:196:255
+COLORDEF:red:162:0:0
+COLORDEF:darkred:200:0:0
+COLORDEF:yellow:249:224:0
+COLORDEF:green:14:166:0
+COLORDEF:magenta:166:0:61
+COLORDEF:black:0:0:0
+COLORDEF:greyblue:143:197:199
+COLORDEF:white:255:255:255
+COLORDEF:Ground:35:35:35
