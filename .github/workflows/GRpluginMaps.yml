@@ -2,8 +2,8 @@ name: Maps cat
 
 on:
   push:
-    paths-ignore: 
-      - 'Release/**'
+    paths: 
+      - 'GRpluginMaps/**'
 
 env:
   ACTION_MAIL: "o.gruetzmann@gmail.com"
