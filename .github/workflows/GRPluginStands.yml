@@ -1,0 +1,24 @@
+name: Oli cat
+
+on:
+  push:
+    paths-ignore: 
+      - 'Release/**'
+
+env:
+  ACTION_MAIL: "o.gruetzmann@gmail.com"
+  ACTION_NAME: "ogruetzmann"
+  ACTION_FILENAME: "GRpluginStands.txt"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: checkout
+      uses: actions/checkout@v2
+    - name: cat
+      run: cat $GITHUB_WORKSPACE/GRpluginStands/*.txt >> $ACTION_FILENAME
+    - name: mv
+      run: mv $ACTION_FILENAME ./Release/
+    - name: push
+      uses: ludeeus/action-push@0.0.1
