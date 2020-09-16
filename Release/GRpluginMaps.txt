@@ -8,8 +8,7 @@ COLORDEF:magenta:166:0:61
 COLORDEF:black:0:0:0
 COLORDEF:greyblue:143:197:199
 COLORDEF:white:255:255:255
-COLORDEF:Ground:35:35:35
-//---------------------A T C - S T A T I O N S-------------------
+COLORDEF:Ground:35:35:35//---------------------A T C - S T A T I O N S-------------------
 //------------------------------APRON----------------------------
 MAP:EDDM_1+2+3_GND
 AIRPORT:EDDM
