@@ -9,8 +9,8 @@ env:
 on:
   push:
     paths: 
-      - 'GRpluginMaps/**'
-      - 'GRpluginStands/**'
+      - $ACTION_FILENAME_MAPS/**
+      - $ACTION_FILENAME_STANDS/**
 
 jobs:
     checkout:
@@ -18,9 +18,24 @@ jobs:
         steps:
           - name: Checkout
             uses: actions/checkout@v2
+        
+    MergeMaps:
+        runs-on: ubuntu-latest
+        needs: checkout
+        steps:
+          - name: cat Maps
+            run: cat $GITHUB_WORKSPACE/$ACTION_FILENAME_MAPS/*.txt >> $ACTION_FILENAME_MAPS.txt
+    
+    MergeStands:
+        runs-on: ubuntu-latest
+        needs: checkout
+        steps:
           - name: Merge Maps
-            run: cat $GITHUB_WORKSPACE/ACTION_FILENAME_MAPS/*.txt >> $ACTION_FILENAME_MAPS.txt
-          - name: Merge Stands
-            run: cat $GITHUB_WORKSPACE/ACTION_FILENAME_STANDS/*.txt >> $ACTION_FILENAME_STANDS.txt
+            run: cat $GITHUB_WORKSPACE/$ACTION_FILENAME_STANDS/*.txt >> $ACTION_FILENAME_STANDS.txt
+    
+    Push:
+        runs-on: ubuntu-latest
+        needs: [MergeMaps, MergeStands]
+        steps:
           - name: Push
             uses: ludeeus/action-push@0.0.1
