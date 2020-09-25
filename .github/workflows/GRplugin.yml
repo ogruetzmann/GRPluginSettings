@@ -22,5 +22,7 @@ jobs:
             run: cat $GITHUB_WORKSPACE/$ACTION_FILENAME_MAPS/*.txt >> $ACTION_FILENAME_MAPS.txt
           - name: Merge Stands
             run: cat $GITHUB_WORKSPACE/$ACTION_FILENAME_STANDS/*.txt >> $ACTION_FILENAME_STANDS.txt
+          - name: Move Files
+            run: mv *.txt ./Release/
           - name: Push
             uses: ludeeus/action-push@0.0.1
