@@ -9,8 +9,8 @@ env:
 on:
   push:
     paths: 
-      - 'ACTION_FILENAME_MAPS/**'
-      - 'ACTION_FILENAME_STANDS/**'
+      - 'GRpluginMaps/**'
+      - 'GRpluginStands/**'
 
 jobs:
     checkout:
