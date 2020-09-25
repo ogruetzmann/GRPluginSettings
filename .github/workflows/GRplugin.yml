@@ -18,9 +18,9 @@ jobs:
         steps:
           - name: Checkout
             uses: actions/checkout@v2
-          - name: cat Maps
-            run: cat $GITHUB_WORKSPACE/$ACTION_FILENAME_MAPS/*.txt >> $ACTION_FILENAME_MAPS.txt
           - name: Merge Maps
+            run: cat $GITHUB_WORKSPACE/$ACTION_FILENAME_MAPS/*.txt >> $ACTION_FILENAME_MAPS.txt
+          - name: Merge Stands
             run: cat $GITHUB_WORKSPACE/$ACTION_FILENAME_STANDS/*.txt >> $ACTION_FILENAME_STANDS.txt
           - name: Push
             uses: ludeeus/action-push@0.0.1
