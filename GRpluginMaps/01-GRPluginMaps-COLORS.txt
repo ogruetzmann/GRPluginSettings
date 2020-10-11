@@ -9,3 +9,7 @@ COLORDEF:black:0:0:0
 COLORDEF:greyblue:143:197:199
 COLORDEF:white:255:255:255
 COLORDEF:Ground:35:35:35
+
+//-------------------------S Y M B O L---------------------------
+SYMBOLDEF:Helipoint
+ARC:0:0:10:0:0
