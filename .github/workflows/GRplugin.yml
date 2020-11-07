@@ -18,6 +18,8 @@ jobs:
         steps:
           - name: Checkout
             uses: actions/checkout@v2
+          - name: Set Branch
+            run: echo "ACTION_BRANCH=${GITHUB_REF##*/}" >> $GITHUB_ENV            
           - name: Merge Maps
             run: cat $GITHUB_WORKSPACE/$ACTION_FILENAME_MAPS/*.txt >> $ACTION_FILENAME_MAPS.txt
           - name: Merge Stands
