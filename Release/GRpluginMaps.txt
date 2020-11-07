@@ -10,6 +10,7 @@ COLORDEF:greyblue:143:197:199
 COLORDEF:white:255:255:255
 COLORDEF:Ground:35:35:35
 COLORDEF:purple:150:0:180
+
 //---------------------A T C - S T A T I O N S-------------------
 //------------------------------APRON----------------------------
 MAP:EDDB_A+E_GND
